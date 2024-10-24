@@ -1,0 +1,14 @@
+CREATE  DATABASE `crud_user`
+
+USE `crud_user`
+
+CREATE TABLE `users` (
+  `ID` int PRIMARY KEY AUTO_INCREMENT,
+  `first_name` varchar(100) NOT NULL,
+  `last_name` varchar(150) NOT NULL,
+  `dob` date NOT NULL,
+  `house_no` int DEFAULT NULL,
+  `street` varchar(100) DEFAULT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  `marital_status` varchar(30) DEFAULT NULL
+)
